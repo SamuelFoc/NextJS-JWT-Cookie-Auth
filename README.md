@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# JWT Authentication Template with Next.js and Cookie Storage
+
+This repository contains a basic template for implementing JWT (JSON Web Token) authentication with Next.js and storing the token in cookies. JWT is a widely used standard for securing web applications, and this template provides a starting point for building secure authentication features in your Next.js applications.
+
+## Features
+
+- User registration and login functionality
+- JWT token generation and verification
+- Storing JWT tokens in secure HTTP-only cookies
+- Protected routes that require authentication
+- User profile management
+
+## Prerequisites
+
+Before using this template, make sure you have the following software and tools installed:
+
+- [Node.js](https://nodejs.org/) (v14 or later recommended)
+- [npm](https://www.npmjs.com/) (v6 or later recommended)
+- [Git](https://git-scm.com/)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository to your local machine:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   git clone https://github.com/your-username/nextjs-jwt-authentication-template.git
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Change to the project directory and Install necessarry packages:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   ```bash
+   cd nextjs-jwt-authentication-template
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Create .env file with following content:
 
-## Learn More
+   ```yaml
+   NEXT_PUBLIC_API_URL=your_backend_api_url
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the application
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+If you find issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. Contributions are welcome!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This template is available under the MIT License. See the LICENSE file for more details.
+
+## Author
+
+Ing. Samuel Šipikal
+
+## Acknowledgments
+
+This project was inspired by the need for a simple JWT authentication template for Next.js applications.
+Thanks to the Next.js and Node.js communities for providing excellent resources and documentation.
+Happy coding! 🚀🔒
