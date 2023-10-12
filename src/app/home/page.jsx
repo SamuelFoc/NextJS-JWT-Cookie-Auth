@@ -6,6 +6,7 @@ import useAuthentication from "@/hooks/useAuthentication";
 
 const Page = () => {
   useAuthentication();
+
   return (
     <main className={styles.main}>
       <h1>HOME</h1>
